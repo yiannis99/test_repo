@@ -1,4 +1,4 @@
-import UserList from '@/components/users';
+import UserList from '../components/users';
 
 export default function Home() {
 	return (

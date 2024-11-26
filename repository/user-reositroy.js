@@ -1,5 +1,5 @@
 import { collection, getDocs, query, where, addDoc } from 'firebase/firestore';
-import { db } from '@/lib/firebase';
+import { db } from '../lib/firebase';
 
 export async function insertData(data) {
 	try {
