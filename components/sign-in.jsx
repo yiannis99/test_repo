@@ -56,6 +56,10 @@ const SignInForm = () => {
 	return (
 		<div className='m-auto flex justify-center max-w-7xl items-center'>
 			<h2 className='animate__fadeInTopLeft'>Sign In</h2>
+			<img
+				loading='lazy'
+				src='/img-r.jpg'
+			/>
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor='email'>Email:</label>
