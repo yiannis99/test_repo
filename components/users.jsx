@@ -26,10 +26,10 @@ const UserList = () => {
 	}, []);
 
 	return (
-		<div>
-			<h1>User List</h1>
+		<div className='m-auto flex justify-center'>
+			<h1 className='text-center'>User List</h1>
 			{rows?.length > 0 ? (
-				<table>
+				<table className='border border-t  animate__fadeInDownBig'>
 					<thead>
 						<tr>
 							<th>User Name</th>

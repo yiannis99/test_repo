@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../lib/firebase';
-
+import 'animate.css';
 const SignInForm = () => {
 	const [formData, setFormData] = useState({ email: '', password: '' });
 	const [loading, setLoading] = useState(false);
@@ -54,8 +54,8 @@ const SignInForm = () => {
 	};
 
 	return (
-		<div>
-			<h2>Sign In</h2>
+		<div className='m-auto flex justify-center max-w-7xl items-center'>
+			<h2 className='animate__fadeInTopLeft'>Sign In</h2>
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor='email'>Email:</label>
